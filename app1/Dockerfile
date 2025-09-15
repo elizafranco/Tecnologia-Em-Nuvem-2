@@ -8,7 +8,7 @@ ENV PORT=8080
 RUN a2enmod rewrite 
 
 #Cppia o código da aplicação 
-COPY ./var/www/html/
+COPY . /var/www/html/
 
 #Corrige permissôes
 RUN chown -R www-data:www-data /var/www/html && chmod -R 755 /var/www/html
