@@ -2,7 +2,7 @@
 FROM php:8.2-apache 
   
 #Porta usada pela Render
-FROM PORT=8080
+ENV PORT=8080
 
 #Ativa o mod_rewrite para URLs amigáveis
 RUN a2enmod rewrite 
